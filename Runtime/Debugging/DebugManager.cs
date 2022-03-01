@@ -167,8 +167,10 @@ namespace UnityEngine.Rendering
 
         DebugManager()
         {
+#if !UNITY_EDITOR
             if (!Debug.isDebugBuild)
                 return;
+#endif  // if !UNITY_EDITOR
 
             RegisterInputs();
             RegisterActions();

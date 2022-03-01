@@ -4,6 +4,17 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [12.1.4] - 2022-03-01
+
+### Fixed
+
+- Fixed null reference exception caused by DebugManager:
+  ```NullReferenceException: Object reference not set to an instance of an object.
+  at UnityEngine.Rendering.DebugManager.UpdateActions () [0x00000] in <00000000000000000000000000000000>:0 
+  at UnityEngine.Rendering.DebugUpdater.Update () [0x0002b] in Library\PackageCache\com.unity.render-pipelines.core@12.1.4\Runtime\Debugging\DebugUpdater.cs:180```
+
+
+
 ## [12.1.4] - 2021-12-07
 
 ### Fixed
